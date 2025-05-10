@@ -1,0 +1,24 @@
+.excalidraw {
+  .eraser-panel {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: var(--zIndex-layerUI);
+
+    &.transition-left {
+      transform: translateX(-100%);
+    }
+  }
+
+  .eraser-panel-container {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--island-bg-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-island);
+    max-width: 13rem;
+  }
+}
